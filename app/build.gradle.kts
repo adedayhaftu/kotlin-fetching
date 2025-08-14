@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.recyclerviews"
+    namespace = "com.example.recycler_view"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.recyclerviews"
+        applicationId = "com.example.recycler_view"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -42,14 +42,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.generativeai)
-    implementation(libs.firebase.ai)
-    implementation(libs.androidx.recyclerview)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
-
 }

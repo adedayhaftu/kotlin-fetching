@@ -42,7 +42,6 @@ class PostsActivity : AppCompatActivity() {
                 response: Response<List<Post>?>
             ) {
                 if (response.isSuccessful) {
-//                    obtain ad display post
                     val posts = response.body()!!
                     val postAdapter = PostRVAdapter(baseContext,posts)
 
@@ -63,10 +62,3 @@ class PostsActivity : AppCompatActivity() {
         })
     }
 }
-//Global app context and activity context
-//context tells the environment we are on
-//the activity is dispalyed based on the activity u are living in
-//global-created from the moment you create teh app until you leave it
-//used to access resources so that you pass the context it knows where u at
-//activity is used to access databases
-//super class that tells where u currently are and tell you what is happening

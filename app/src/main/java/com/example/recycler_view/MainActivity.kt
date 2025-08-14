@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     override fun  onResume() {
         super.onResume()
         rvNames = findViewById(R.id.rvnames)
-        val names = listOf("Anne","Andrew","Ruby","James","Rebeccah","Umutoni","Angela","Daniella","Thomas", "Linn","Shaline","Berissa")
+        val names = listOf("Adeday","Andrew","Daniela","John","Rebeccah","Kevine","Angela","Hunter","Thomas", "Hani","Shaline","Berissa")
         val namesAdapter = NamesRvAdapter(names)
         rvNames.layoutManager= LinearLayoutManager(this)
         rvNames.layoutManager = GridLayoutManager(this, 3)

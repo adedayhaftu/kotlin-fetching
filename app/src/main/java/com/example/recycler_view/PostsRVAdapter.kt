@@ -1,9 +1,5 @@
 package com.example.recycler_view
 
-import kotlin.toString
-
-
-
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -30,7 +26,6 @@ class PostRVAdapter(val context: Context,val posts: List<Post>): RecyclerView.Ad
         holder.tvUserId.text=currentPost.userId.toString()
         holder.cvPost.setOnClickListener { val intent= Intent(context, ViewPostActivity::class.java)
             intent.putExtra("POST_ID",currentPost.id)
-            //allow to add smll pieces of data like double and those kind of things
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         }

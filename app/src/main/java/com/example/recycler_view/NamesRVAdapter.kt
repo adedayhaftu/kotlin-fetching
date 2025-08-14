@@ -26,7 +26,6 @@ class NamesRvAdapter(val names:List<String>) : RecyclerView.Adapter<NamesViewHol
         holder.tvName.text=names[position]
     }
 
-
 }
 class NamesViewHolder(val itemView: View): RecyclerView.ViewHolder(itemView){
     val tvName= itemView.findViewById<TextView>(R.id.tvBody)

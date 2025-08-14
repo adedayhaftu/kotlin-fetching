@@ -51,14 +51,12 @@ class PostsActivity : AppCompatActivity() {
                         .show()
                 }
             }
-
             override fun onFailure(
                 call: Call<List<Post>?>,
                 t: Throwable
             ) {
                 Toast.makeText(baseContext, t.message, Toast.LENGTH_LONG).show()
             }
-
         })
     }
 }

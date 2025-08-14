@@ -29,7 +29,6 @@ class ViewPostActivity : AppCompatActivity() {
             postId = intent.extras!!.getInt("POST_ID")
         }
     }
-
     override fun onResume() {
         super.onResume()
         rvComments = findViewById(R.id.rvComments)

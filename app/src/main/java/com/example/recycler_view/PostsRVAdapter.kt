@@ -18,7 +18,6 @@ class PostRVAdapter(val context: Context,val posts: List<Post>): RecyclerView.Ad
     override fun getItemCount(): Int {
         return posts.size
     }
-
     override fun onBindViewHolder(holder: PostsViewHolder, position: Int) {
         val currentPost= posts[position]
         holder.tvTitle.text=currentPost.title
@@ -32,7 +31,6 @@ class PostRVAdapter(val context: Context,val posts: List<Post>): RecyclerView.Ad
     }
 
 }
-
 class PostsViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     val tvTitle = itemView.findViewById<TextView>(R.id.tvTitle)
     val tvBody= itemView.findViewById<TextView>(R.id.tvBody)
